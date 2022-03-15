@@ -1,4 +1,4 @@
-import { Language } from "./Language";
+import { Language } from "./Language.js";
 
 export class Framework extends Language {
 
@@ -7,8 +7,8 @@ export class Framework extends Language {
     _stack;
 
     // constructor(id, name, uses, description)
-    constructor(set, stack) {
-        super();
+    constructor(id, name, uses, description, set, stack) {
+        super(id, name, uses, description);
         this._set = set;
         this._stack = stack;
 
