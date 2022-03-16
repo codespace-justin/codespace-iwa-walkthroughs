@@ -41,28 +41,28 @@ export class Language {
     // --- Setters ---
     set changeId(newId) {
 
-        if ( typeof newId == "number") {
+        if ( typeof newId === "number") {
             return this._id = newId;
         }
     }
 
     set changeName(newName) {
 
-        if ( typeof newName == "string") {
+        if ( typeof newName === "string") {
             return this._name = newName;
         }
     }
 
     set changeUses(newUses) {
 
-        if ( typeof newUses == "object") {
+        if ( typeof newUses === "object") {
             return this._uses = newUses;
         }
     }
 
     set changeDescription(newDescription) {
 
-        if ( typeof newDescription == "string") {
+        if ( typeof newDescription === "string") {
             return this._description = newDescription;
         }
     }
@@ -90,5 +90,13 @@ export class Language {
 
             console.log(` -${useCase}\n`);
         });
+    }
+
+    static compareIds( caseA, caseB ) {
+
+        if (caseA.getId === caseB.getId) {
+
+            alert(caseA.getName + " has the same id as " + caseB.getName)
+        }
     }
 }

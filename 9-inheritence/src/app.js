@@ -10,7 +10,7 @@ import { Language } from "./classes/Language.js";
 const lang1 = new Language(
     1, 
     "Java", 
-    ["Enterprise Software Development", "Banking Applications", "Web Services"], 
+    ["Enterprise Software Development", "Banking Applications", "Web Services"],  
     "Java is a general purpose,  object-oriented programming language created by James Gosling in 1995"
 );
 
@@ -29,6 +29,7 @@ const frame1 = new Framework(
 console.log(lang1);
 console.log('\n');
 
+
 // Test if Frame object was instantiated correctly
 console.log(frame1);
 console.log('\n');
@@ -38,22 +39,15 @@ console.log('\n');
 
 // --- Language --- //
 
-// test getters
-console.log('\nLanguage Getters:')
-console.log(lang1.getId)
-console.log(lang1.getName)
-console.log(lang1.getUses)
-console.log(lang1.getDescription)
+// test setters - change Java to Python
+'Language Setters:'
+lang1.changeId = 1 
+lang1.changeName = "Python" 
+lang1.changeUses = ["Machine Learning", "Data Science", "Data Analysis"]
+lang1.changeDescription = "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation"
 
-console.log('\n')
 
-// test setters
-console.log('Language Setters:')
-console.log(lang1.changeId = 1 )
-console.log(lang1.changeName = "Python" )
-console.log(lang1.changeUses = ["Machine Learning", "Data Science", "Data Analysis"])
-console.log(lang1.changeDescription = "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation")
-
+/*
 
 // --- Framework --- //
 
@@ -65,15 +59,17 @@ console.log(frame1.getUses)
 console.log(frame1.getDescription)
 console.log(frame1.getSet)
 console.log(frame1.getStack)
+*/
+
 
 // test setters
-console.log('\nFramework Setters:')
-console.log(frame1.changeId = 101 )
-console.log(frame1.changeName = "Vue.js" )
-console.log(frame1.changeUses = ["Web Development", "Bulding Frontends", "Bulding Single-Page Applications"])
-console.log(frame1.changeDescription = `Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.`)
-console.log(frame1.changeSet = "JavaScript")
-console.log(frame1.changeStack = "Frontend")
+'\nFramework Setters:'
+frame1.changeId = 101 
+frame1.changeName = "Vue.js" 
+frame1.changeUses = ["Web Development", "Bulding Frontends", "Bulding Single-Page Applications"]
+frame1.changeDescription = `Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.`
+frame1.changeSet = "JavaScript"
+frame1.changeStack = "Frontend"
 
 
 
@@ -85,10 +81,6 @@ console.log(frame1.changeStack = "Frontend")
 
 const element = document.getElementById("example")
 
-// console test
-console.log('\n')
-lang1.displayUsesConsole();
-
 // DOM test
 lang1.displayUsesDOM(element);
 
@@ -96,10 +88,19 @@ lang1.displayUsesDOM(element);
 // --- Framework --- //
 
 // console test
-console.log('\n')
-frame1.displayUsesConsole();
+// console.log('\n')
+// frame1.displayUsesConsole();
 
 // DOM test
 frame1.displayUsesDOM(element);
+
+// Test if Lang object was instantiated correctly
+console.log(lang1);
+console.log('\n');
+
+
+// Test if Frame object was instantiated correctly
+console.log(frame1);
+console.log('\n');
 
 
