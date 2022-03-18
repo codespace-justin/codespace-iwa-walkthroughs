@@ -46,20 +46,10 @@ lang1.changeName = "Python"
 lang1.changeUses = ["Machine Learning", "Data Science", "Data Analysis"]
 lang1.changeDescription = "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation"
 
+console.log(lang1.changeName = "Swift");
 
-/*
 
 // --- Framework --- //
-
-// test getters
-console.log('\nFramework Getters:')
-console.log(frame1.getId)
-console.log(frame1.getName)
-console.log(frame1.getUses)
-console.log(frame1.getDescription)
-console.log(frame1.getSet)
-console.log(frame1.getStack)
-*/
 
 
 // test setters
@@ -87,9 +77,6 @@ lang1.displayUsesDOM(element);
 
 // --- Framework --- //
 
-// console test
-// console.log('\n')
-// frame1.displayUsesConsole();
 
 // DOM test
 frame1.displayUsesDOM(element);

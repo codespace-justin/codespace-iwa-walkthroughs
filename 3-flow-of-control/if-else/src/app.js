@@ -33,18 +33,22 @@ if (bank === "Nedbank" || bank === "nedbank" || bank === "NEDBANK") {
         withdrawFunds();
         
 
+    // Condition returns true if user tries to withdraw more than what is avail in their account
     } else if (balance < withdrawalAmt) {
 
         insufficientFundsError();
 
+    // condition returns true if there is less than 20 left in account after withdrawal
     } else if (remainder <= 20) {
 
         notEnoughLeftError();
 
+    // default system error in case of unexpected error/input
     }  else {
 
        defaultError();
     }
+
 
 // If user is not nedbank customer, logic never runs
 } else {
@@ -53,12 +57,13 @@ if (bank === "Nedbank" || bank === "nedbank" || bank === "NEDBANK") {
     console.log("Ejecting card..");
 }
 
+// outside of If-Statement and end of app
 console.log("\ncontinue with our day..")
 
 
 
 /* --------------------------- 
-    Functions
+   Display Functions
 ----------------------------- */
 
 function withdrawFunds() {

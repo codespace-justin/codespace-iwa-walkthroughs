@@ -18,7 +18,6 @@ export class Language {
         this._description = description;
     }
 
-    
 /* --- Getters and Setters --- */
 
     // --- Getters ---
@@ -49,7 +48,7 @@ export class Language {
     set changeName(newName) {
 
         if ( typeof newName === "string") {
-            return this._name = newName;
+           return this._name = newName;
         }
     }
 
