@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IWA Storage Website</title>
+        
+        <link rel="stylesheet" href="../css/theme.css">
+ 
+    </head>
+
+    <body>
+
+    <!-- Nav -->
+
+        <nav class="nav">
+            <h2 class="title">Hello World</h2>
+            <ul class="nav-items">
+                <li class="nav-button">About</li>
+                <li class="nav-button">Services</li>
+                <li class="nav-button">Contact</li>
+            </ul>
+        </nav>
+
+    <!-- Hero -->
+
+        <header class="about">
+           
+            <br>
+            <h1> About Storage API </h1>
+            <br>
+
+
+            <h2 class="sub-heading"> How it works </h2>
+            <p>
+                With web storage, web applications can store data locally within the user's browser. <br><br>
+
+                Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. 
+                
+                Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server. <br><br>
+                
+                Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data. <br><br>
+
+                Values in saved using storage api have to be in key : value pairs (similar to js objects and json) <br><br>
+                <b>Note: <i>Name/value pairs are always stored as strings. Remember to convert them to another format when needed!</i> </b>        
+            </p>
+
+            <!-- break -->
+            <br>
+
+            <h2 class="sub-heading"> Local Storage </h2>
+            <p>
+                window.localStorage - stores data with no expiration date <br>
+                The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year.
+        
+            </p>
+
+            
+            <h2 class="sub-heading"> Session Storage </h2>
+            <p>
+                window.sessionStorage - stores data for one session (data is lost when the browser tab is closed) <br>
+                The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.
+            </p>
+
+            <!-- break -->
+            <br>
+
+            <h2 class="sub-heading"> Main Methods/Properties </h2>
+            <ul>
+                <li>.getItem("key")</li>
+                <li>.setItem("key", "value")</li>
+                <li>.length</li>
+            </ul>
+
+            <!-- break -->
+            <br>
+
+        </header>
+
+
+        <div class="divider"></div>
+
+    <!-- Footer -->
+
+        <footer class="footer">
+            <h1>Footer</h1>
+            <ul class="footer-links">
+                <li>
+                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">FaceBook</a>
+                </li>
+                <li>
+                    <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+                </li>
+                <li>
+                    <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
+
+</html>

@@ -41,6 +41,9 @@
         margin: 0.5rem 0.25rem;
     }
 
+    .sub-heading {
+        color:var(--bg-accent);
+    }
 
 /*------------------------------
     App Styles
@@ -92,6 +95,9 @@
             box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.2);
         }
 
+/*------------------------------
+    Landing
+------------------------------*/
 
     /*------------------------------
         Hero
@@ -181,4 +187,20 @@
         }
         .footer-links a {
             color: var(--bg-accent);
+        }
+
+/*------------------------------
+    About
+------------------------------*/
+
+        .about {
+            display: flex;
+            flex-direction: column;
+
+            padding: 1rem 0;
+            margin: 0 10vw;
+            
+
+            justify-content: center;
+            text-align: center;
         }
