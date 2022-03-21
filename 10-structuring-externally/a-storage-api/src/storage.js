@@ -52,3 +52,37 @@ let services = [
 const createService = () => {
 
 }
+
+const populateServices = () => {
+
+    services.forEach(object => {
+    
+        servicesList.innerHTML+= `
+        <li>
+            <article class="service-component">
+                <h2>
+                    ${object.title}
+                </h2>
+                <div class="service-preview">
+
+                </div>
+                <p>
+                    ${object.description}
+                </p>
+                <button>See More</button>
+            </article>
+        </li>
+        `
+    });
+
+}
+
+
+/* --------------------------
+    Event Listeners:
+-------------------------- */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    populateServices()
+})
