@@ -1,0 +1,90 @@
+/*------------------------------
+    Variables
+------------------------------*/
+    
+    :root {
+
+        /* Light */
+        --bg-page: rgb(235, 235, 235);
+        --bg-component: #fff;
+        
+        --bg-accent: rgb(155, 36, 36);
+
+        --main-txt-colour: rgb(85, 85, 85);
+        --heading-txt-colour: rgb(37, 37, 37);
+
+    }
+
+/*------------------------------
+    Semantic Styles
+------------------------------*/
+
+    *, ::before, ::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: consolas;
+        color: var(--main-txt-colour);
+    }
+
+    h1, h2, h3 {
+        color: var(--heading-txt-colour);
+        margin: 0.5rem 0.25rem;
+    }
+
+
+/*------------------------------
+    App Styles
+------------------------------*/
+
+    /* - Nav - */
+
+        .nav {
+            display: flex;
+            justify-content: center;
+
+            position: sticky;
+            top: 0;
+            box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.2);
+            padding: 0.5rem;
+
+        }
+
+        .title {
+            flex: 2;
+            /* background-color: aqua; */
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-items {
+            flex: 3;
+            font-size: 1.2rem;
+
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            padding: 0.7rem 0.2rem;
+        }
+
+        .nav-button {
+            display: flex;
+            flex-direction: row;
+            padding: 0.75rem;
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            border-radius: 7px;
+            box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.2);
+        }
+
+    /* - Hero - */
+    .hero {
+        min-height: 89vh;
+    }
