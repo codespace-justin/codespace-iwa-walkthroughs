@@ -1,9 +1,11 @@
+/* --------Storage Key---------- */
+
+const STORAGE_KEY = "iwa-json-walk-key";
+
+
 /* --------------------------
     Variables Setup
 -------------------------- */
-
-// Main Focus : localStorage
-const STORAGE_KEY = "iwa-json-walk-key";
 
 // create references to elements:
 const servicesList = document.getElementById("services-grid");

@@ -54,6 +54,38 @@
         color:var(--bg-accent);
     }
 
+
+    /*--------login---------*/
+
+        .login-body {
+            background-color: whitesmoke;
+        }
+
+        .login {
+            border-radius: 7px;
+            box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+
+            margin: 20vh 25vw;
+            padding: 3rem 5rem;
+
+            background-color: var(--bg-page);
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            
+        }
+
+        .login form input {
+            font-family: consolas;
+            font-size: 1.5rem;
+            margin: 0.75rem 0;
+        }
+
 /*------------------------------
     App Styles
 ------------------------------*/
