@@ -9,6 +9,9 @@
         <title>IWA Storage Website</title>
         
         <link rel="stylesheet" href="../css/theme.css">
+        <link id="dark" rel="stylesheet" href="../css/dark.css">
+        <link id="blue" rel="stylesheet" href="../css/blue.css">
+        <link id="darkBlue" rel="stylesheet" href="../css/darkBlue.css">
  
     </head>
 
@@ -18,10 +21,19 @@
 
         <nav class="nav">
             <h2 class="title">Hello World</h2>
+
             <ul class="nav-items">
                 <li class="nav-button">About</li>
                 <li class="nav-button">Services</li>
                 <li class="nav-button">Contact</li>
+                <li>
+                    <select id="themeSelector">
+                        <option value="theme">default</option>
+                        <option value="dark">dark</option>
+                        <option value="darkBlue">dark/blue</option>
+                        <option value="blue">blue</option>
+                    </select>
+                </li>
             </ul>
         </nav>
 

@@ -1,0 +1,16 @@
+:root {
+
+    /* Light */
+    --bg-page: #fff;
+    --bg-contrast: rgb(235, 235, 235);
+    --bg-component: #fff;
+    
+    --bg-nav: #fff;
+    --bg-accent: rgb(72, 175, 201);
+
+    --main-txt-colour: rgb(85, 85, 85);
+    --heading-txt-colour: rgb(37, 37, 37);
+
+    --accent-txt-colour: rgb(255, 255, 255);
+
+}

@@ -1,0 +1,20 @@
+/*------------------------------
+    Variables
+------------------------------*/
+    
+:root {
+
+    /* dark */
+    --bg-page: rgb(58, 58, 58);
+    --bg-contrast: rgb(56, 56, 56);
+    --bg-component: rgb(34, 34, 34);
+    
+    --bg-nav: rgb(0, 0, 0);
+    --bg-accent: rgb(72, 175, 201);
+
+    --main-txt-colour: rgb(255, 255, 255);
+    --heading-txt-colour: rgb(235, 235, 235);
+
+    --accent-txt-colour: rgb(255, 255, 255);
+
+}

@@ -9,6 +9,7 @@
         --bg-contrast: rgb(235, 235, 235);
         --bg-component: #fff;
         
+        --bg-nav: #fff;
         --bg-accent: rgb(201, 72, 72);
 
         --main-txt-colour: rgb(85, 85, 85);
@@ -36,6 +37,14 @@
         background-color: var(--bg-page);
     }
 
+    a:link{
+        color: var(--main-txt-colour);
+    }
+
+    a:visited {
+        color: var(--main-txt-colour);    
+    }
+
     h1, h2, h3 {
         color: var(--heading-txt-colour);
         margin: 0.5rem 0.25rem;
@@ -61,13 +70,12 @@
             top: 0;
             box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.2);
             padding: 0.5rem;
-            background-color: #fff;
+            background-color: var(--bg-nav);
 
         }
 
         .title {
             flex: 2;
-            /* background-color: aqua; */
             padding: 0.5rem 1rem;
         }
 
