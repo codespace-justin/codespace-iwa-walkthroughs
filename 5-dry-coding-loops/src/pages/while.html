@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // litres of fuel
+        let fuel = 36;
+
+        let startingFuel = fuel;
+        
+        // km's
+        let distanceTravelled = 0;
+
+        // no of iterations
+        let counter = 0;
+
+  
+        // convert from litres to ml
+        while (fuel > 0) {
+
+            // Updating Variable
+            distanceTravelled = distanceTravelled + 16
+            //distanceTravelled += 13
+            console.log(distanceTravelled);
+
+            // exit statement
+            fuel--;
+            counter++;
+        }
+
+
+        // display in console
+        console.log("\nOn " + startingFuel + "L of fuel your car travelled " + distanceTravelled + " Kilometres");
+        console.log("loop ran " + counter)
+
+
+        // display in DOM
+        document.body.innerHTML += "\nOn " + startingFuel + "L of fuel your car travelled " + distanceTravelled + " Kilometres <br><br>";
+        document.body.innerHTML += "loop ran " + counter;
+
+    </script>
+
+</body>
+
+</html>

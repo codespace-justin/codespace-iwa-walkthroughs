@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Even or odd example
+
+        let integerList = [545, 8784, 12, 7, 2, 44, 73, 66];
+
+        let noOfLoops = integerList.length;
+
+        for (let i = 0; i < noOfLoops; i++) {
+
+            //console.log(integerList[i])
+
+            if (integerList[i] % 2 == 0) {
+
+                console.log("even\n");
+                document.body.innerHTML += "even <br>"
+
+            } else {
+
+                console.log("odd");
+                document.body.innerHTML += "odd <br>"
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
