@@ -87,6 +87,14 @@ class Robot {
        console.log(answer)
     }
 
+    // return todays date
+    giveDate() {
+        let todayDate = new Date();
+        todayDate = todayDate.toUTCString();
+
+        return todayDate;
+    }
+
 };
 
 
@@ -97,7 +105,7 @@ class Robot {
 // create Robot Object
 const sonny = new Robot("Sonny");
 
-sonny.greet();
+alert(sonny.giveDate());
 
-sonny.createAndSort(3);
+
 
