@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    
+    min-height: 100vh;
+    background-color: rgb(7, 114, 55);
+
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 80vh;
+    margin: 2rem;
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* Keyboard */
+
+    .control-area {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 20vw;
+        background-color: rgb(235, 235, 235);
+    }
+
+    #keyboard-buttons {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .button {
+        padding: 1rem;
+    }
+
+    #zero {
+        grid-column-start: 0;
+        grid-column-end: 2;
+    }
+
+    #withdraw-amount {
+        border: solid 1px;
+        min-height: 4rem;
+        padding: 0.5rem;
+    }

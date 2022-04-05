@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Walkthrough</title>
+    <script src="./src/events.js" defer></script>
+    <link rel="stylesheet" href="./src/theme.css">
+</head>
+
+<body>
+
+    <div>
+        <button style="background-color: red; border-radius: 50%;">
+            X
+        </button>            
+    </div>
+
+    <main id="app">
+
+        <h1> NedBank ATM </h1>
+
+        <div class="control-area" id="keyboard">
+            <div id="withdraw-amount">
+                <span>R</span>
+                <span id="withdraw-value"></span>
+            </div>
+            <div id="keyboard-buttons">
+                <button class="button">9</button>
+                <button class="button">8</button>
+                <button class="button">7</button>
+                <button class="button">6</button>
+                <button class="button">5</button>
+                <button class="button">4</button>
+                <button class="button">3</button>
+                <button class="button">2</button>
+                <button class="button">1</button>
+                <button id="zero" class="button">0</button>
+            </div>
+        </div>
+
+        <br>
+
+        <section class="control-area" id="transactions">
+
+            <button id="withBtn" >Withdraw Funds</button>
+
+            <br>
+
+            <textarea name="" id="console" cols="30" rows="10"></textarea>
+
+        </section>
+        
+    </main>
+
+</body>
+
+</html>
