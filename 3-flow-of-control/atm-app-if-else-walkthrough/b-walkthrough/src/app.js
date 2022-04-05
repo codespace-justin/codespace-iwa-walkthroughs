@@ -11,61 +11,28 @@ console.log("-------------------------------\n")
 // get Inputs for ATM app
 
 let balance = 150;
-
 let bank = prompt("Which bank do you belong to?");
 
 // Check to ensure customer is a nedbank client
-if (bank === "Nedbank" || bank === "nedbank" || bank === "NEDBANK") {
 
-    // get amount user wants to withdraw
-    let withdrawalAmt = parseInt(prompt("how much would you like to withdraw?"));
+/*
 
-    // how much will be left in account
-     let remainder = balance - withdrawalAmt;
+    Nested if-else logic here
 
-     console.log("amount that would be left in account " + remainder)
+    * check if user is nedbank customer
 
-    // check 2 conditions: enough funds, must leave r20 in their acc
-    if (withdrawalAmt < balance && remainder >= 20)  {
+    * check if user has enough funds
 
-        balance = balance - withdrawalAmt;
+    * default case
 
-        withdrawFunds();
-        
-
-    // Condition returns true if user tries to withdraw more than what is avail in their account
-    } else if (balance < withdrawalAmt) {
-
-        insufficientFundsError();
-
-    // condition returns true if there is less than 20 left in account after withdrawal
-    } else if (remainder <= 20) {
-
-        notEnoughLeftError();
-
-    // default system error in case of unexpected error/input
-    }  else {
-
-       defaultError();
-    }
-
-
-// If user is not nedbank customer, logic never runs
-} else {
-
-    console.log("You must be a netbank client to use this machine");
-    console.log("Ejecting card..");
-}
-
-// outside of If-Statement and end of app
-console.log("\ncontinue with our day..")
-
+*/
 
 
 /* --------------------------- 
    Display Functions
 ----------------------------- */
 
+// success message
 function withdrawFunds() {
     
     console.log("Your withdrawal was successfull");
@@ -74,7 +41,7 @@ function withdrawFunds() {
    
 }
 
-
+// funds error
 function insufficientFundsError() {
 
     console.log("Your withdrawal was unsuccessful.. Insufficient funds.");
@@ -82,7 +49,7 @@ function insufficientFundsError() {
 
 }
 
-
+// bank charges funds error
 function notEnoughLeftError() {
 
     console.log("Your withdrawal was unsuccessful.. There has to be at least R20 left in your account");
@@ -90,7 +57,7 @@ function notEnoughLeftError() {
 
 }
 
-
+// unexpected error
 function defaultError() {
 
     console.log("System error.. aborting transaction")
