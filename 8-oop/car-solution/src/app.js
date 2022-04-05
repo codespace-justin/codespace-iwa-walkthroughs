@@ -4,6 +4,3 @@ import { Car } from "./js/Car.js";
 /* --------------------------------
     Setup:
 ------------------------------- */
-
-let showRoomSelection = [];
-

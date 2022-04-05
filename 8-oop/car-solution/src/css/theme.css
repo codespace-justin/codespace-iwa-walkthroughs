@@ -45,3 +45,14 @@ body {
         background-color: rgb(30, 30, 30);
     }
 
+
+    .white {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        margin: 0 15vw;
+    }
+
+    .completedTask {
+        text-decoration: line-through;
+    }
