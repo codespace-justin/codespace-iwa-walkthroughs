@@ -7,8 +7,9 @@ export class Dog extends Pet{
 
     constructor(name, colour, owner, age, breed) {
 
-        super(name, colour, owner, age);
         this._breed = breed;
+        // super keyword calls parent constructor
+        super(name, colour, owner, age);        
     }
 
     bark() {

@@ -16,6 +16,7 @@ export class Pet {
 
     // GETTERS & SETTERS
 
+    //name
     get getname() {
         return this._name;
     }
@@ -23,6 +24,7 @@ export class Pet {
         this._name = value;
     }
 
+    //colour
     get getColour() {
         return this._colour;
     }
@@ -30,6 +32,7 @@ export class Pet {
         this._colour = value;
     }
 
+    // owner
     get getowner() {
         return this._owner;
     }
@@ -37,6 +40,7 @@ export class Pet {
         this._owner = value;
     }
 
+    //age
     get age() {
         return this._age;
     }
@@ -45,6 +49,8 @@ export class Pet {
     }
 
     // USER METHODS
+
+    // methods takes 2 pet instances as arguments, returns whichever is older
     static determineOlder(Pet1, Pet2) {
 
         if (Pet1._age > Pet2._age) {
