@@ -1,20 +1,18 @@
+console.log("Example of triangle as object \n\n")
 
-    console.log("Example of triangle as object \n\n")
-
-    // ----- Triangle (Variables Example) -----
+// ----- Triangle (Variables Example) -----
    
-        // All of these 3 individual variables describe only 1 thing
-        let base = 20;
-        let height = 7;
-        const PI = 3.1415;
+       // All of these 3 individual variables describe only 1 thing
+       let base = 20;
+       let height = 7;
+       const PI = 3.1415;
    
    
-   // ----- Triangle (Objects Example) -----
+// ----- Triangle (Objects Example) -----
            
-        // Instead we make 1 var called triangle, which contains 3 variables inside of it
-        // These variables are also known as properties
-        // declare var and assign object to it using {}
-   
+       // Instead we make 1 var called triangle, which contains 3 variables inside of it
+       // These variables are also known as properties
+       // declare var and assign object to it using {}
    
        let triangle1 = {
    
@@ -26,10 +24,9 @@
    
             // object behaviour
             calculateArea : function() {
-               return (base * 0.5) * height + "cm";
-               
-            },
 
+               return (base * 0.5) * height + "cm";    
+            },
             throwAway : function() {
 
                 if (this.stock != 0) {
@@ -42,7 +39,6 @@
                 }
             }
        };
-
    
    
    // ----- Difference in refencing and functionality -----
@@ -51,16 +47,16 @@
         console.log(base + " " + height + " " + PI);
    
         console.log("\n");
-   
-        console.log("Display properties by referencing object");
-        console.log(triangle1);
-   
-        console.log("\n");
 
 
    
         // destructing object simply means referencing each object property as 
         // a seperate variable
+        console.log("Display Triangle object in console");
+        console.log(triangle1);
+   
+        console.log("\n");
+
         console.log("Display properties by destructuring object");
         console.log(triangle1.base + " " + triangle1.height + " " + triangle1.Pi);
    

@@ -4,6 +4,7 @@
 
 console.log("\nObject Example")
 
+// create dog object
 let dog1 = {
 
     name : "spot",
@@ -13,14 +14,13 @@ let dog1 = {
 
 };
 
-console.log(dog1)
-
+// Check to ensure object is created as expected
+// console.log(dog1)
 
 console.log("\nArray Example")
 
 // String Array
 // 0 indexed
-
 let pets = [ "dog", "cat", "hamster", "bird", "spider", "fish", "snake" ]; 
 
 console.log(pets)
@@ -44,15 +44,6 @@ pets.pop()
 pets.pop()
 console.log(pets)
 
-/* Extra array example
-
-for (let i = 0 ; i < 3 ; i++) {
-
-    pets.pop();
-}
-console.log(pets)
-
-*/
 
 // ---------- splice() ----------
 // custom modifications
@@ -76,26 +67,3 @@ console.log(pets)
 // update
 pets.splice(3, 1, "**tortoise**")
 console.log(pets)
-
-
-/* ----------------------------------------------------
-    Quick Loop Example
----------------------------------------------------- */
-
-/*
-
-// Display array in menu:
-
-let question = ""
-
-for (let index = 0; index < 7; index++) {
-
-    question += index + ') ' + pets[index] + '\n'; 
-    
-}
-
-console.log(question)
-
-let answer = prompt("What would you like to purchase? \n" + question);
-
-*/
