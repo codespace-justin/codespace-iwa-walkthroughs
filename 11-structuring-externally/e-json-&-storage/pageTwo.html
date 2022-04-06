@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number 2</title>
+    <style>
+        .person {
+
+            list-style: none;
+            font-size: 1.25rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2> Recepient Page: </h2>
+
+    this data comes from localStorage: <br>
+
+    <script>
+
+        const storageExampleKey = "csa-storage-example";
+
+        //get name from local storage:
+        let value = localStorage.getItem(storageExampleKey);
+
+        // converting JSON string back to JS
+        objectValue = JSON.parse(value)
+
+        // display
+        console.log(objectValue)
+
+        // display object
+        document.body.innerHTML += `
+            <ul class="person" id="${objectValue.id}">
+                <li> ID : ${objectValue.id} </li>
+                <li> Name : ${objectValue.name} </li>
+                <li> LastName: ${objectValue.lastname} </li>
+            </ul>
+        `;
+
+    </script>
+
+</body>
+
+</html>
