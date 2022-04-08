@@ -15,10 +15,25 @@
     <h1 class="header">Hero's Cinema:</h1>
 
     <section> 
+        <!-- Title -->
         <h2>
             Film Selection:
         </h2>
 
+        <!-- Form for Movies -->
+        <form action="" id="movieForm" class="movie-form">
+
+            <h2> Create New Movie </h2>
+
+            <input type="text" id="movieCode">
+            <textarea id="movieDescription" cols="15" rows="5"></textarea>
+            <input type="datetime-local" id="movieDate">
+            <!-- <input type="number" id="movieSeats"> -->
+            <input type="number" id="movieDuration">
+            <input type="submit" id="createMovie">
+        </form>
+
+        <!-- Display Movies on Show -->
         <div class="movie-display">
 
             <!-- sample movie -->
@@ -28,19 +43,10 @@
                 <span>availDate</span>
                 <span>seatsAvail</span>
                 <span>duration</span>
-                <input type="number" name="" id="" placeholder="0">
-                <button>Book</button>
+                <input class="inputs" type="number" name="" id="" placeholder="0">
+                <button class="inputs">Book</button>
             </article>
             
-            <!-- sample movie -->
-            <article class="movie-card">
-                <span>name</span>
-                <span>description</span>
-                <span>availDate</span>
-                <span>seatsAvail</span>
-                <span>duration</span>
-                <button class="inputs" >Book</button>
-            </article>
         </div>
 
     </section>

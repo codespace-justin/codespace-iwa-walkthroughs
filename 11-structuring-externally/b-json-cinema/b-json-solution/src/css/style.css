@@ -9,10 +9,10 @@ h1 {font-size: 2.5rem;}
 html, body {
     margin: 0;
     padding: 0;
-    background-image: url("../resources/cinema.jpg");
+    /*background-image: url("../resources/cinema.jpg");
     background-position: center;
     background-size: cover;
-    filter:grayscale(12%);
+    filter:grayscale(12%);*/
 }
 
 .header {
@@ -20,6 +20,20 @@ html, body {
     color: white;
     margin: 0;
     padding: 2rem 0.5rem;
+}
+
+.movie-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(100, 13, 199);
+    color: white;
+
+    margin: 2rem;
+    padding: 2rem 25vw;
+    border-radius: 7px;
 }
 
 .movie-display {
@@ -35,10 +49,13 @@ html, body {
     justify-content: center;
     text-align: center;
 
-    background-color: rgb(119, 0, 255);
+    background-color: rgb(100, 13, 199);
     color: white;
 
     margin: 2rem;
     padding: 2rem;
     border-radius: 7px;
+}
+.movie-card span {
+    margin: 1rem 0;
 }
