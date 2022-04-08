@@ -1,4 +1,4 @@
-class Movie {
+export class Movie {
 
     _code;
     _name;
@@ -6,10 +6,11 @@ class Movie {
     _seatsAvail;
     _duration;
 
-    constructor(code, name, availDate, seatsAvail, duration) {
+    constructor(code, name, description, availDate, seatsAvail, duration) {
 
         this._code = code;
         this._name = name;
+        this._description = description
         this._availDate = availDate;
         this._seatsAvail = seatsAvail;
         this._duration = duration;
