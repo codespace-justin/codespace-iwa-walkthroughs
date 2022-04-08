@@ -95,5 +95,5 @@ document.addEventListener('DOMContentLoaded', () => {
     let usernameElement = document.getElementById("name-place");
 
     // Display username property of js object
-    usernameElement.innerHTML += activeUser.username;
+    usernameElement.innerHTML += activeUser.username + activeUser.password;
 })
