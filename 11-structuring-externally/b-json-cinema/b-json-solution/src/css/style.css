@@ -13,6 +13,7 @@ html, body {
     background-position: center;
     background-size: cover;
     filter:grayscale(12%);*/
+    background-color:  rgb(49, 49, 49);
 }
 
 .header {
@@ -59,3 +60,14 @@ html, body {
 .movie-card span {
     margin: 1rem 0;
 }
+
+.subTitle {
+    color:whitesmoke;
+}
+
+/* ------------ Checkout --------------- */
+
+    .book {
+        margin: 0 25vw;
+        padding: 4rem;
+    }
